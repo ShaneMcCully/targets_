@@ -21,6 +21,9 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1U-uT-zkc">
                                 <rect key="frame" x="0.0" y="481" width="375" height="58"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="yTe-YZ-PSU"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -36,12 +39,26 @@
                                     <action selector="buttonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w02-KM-7OI"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kam-JM-r3K">
+                                <rect key="frame" x="0.0" y="547" width="375" height="58"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="GVB-co-YT7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="L1U-uT-zkc" secondAttribute="trailing" id="4lu-Kx-aJI"/>
+                            <constraint firstItem="Kam-JM-r3K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Aq1-Xv-ws4"/>
                             <constraint firstItem="L1U-uT-zkc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KoB-ue-gSy"/>
+                            <constraint firstItem="Kam-JM-r3K" firstAttribute="top" secondItem="L1U-uT-zkc" secondAttribute="bottom" constant="8" id="Lp1-Mf-dSN"/>
+                            <constraint firstItem="Kam-JM-r3K" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Lvt-LP-gki"/>
                             <constraint firstItem="L1U-uT-zkc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="461" id="Qs8-de-w6G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kam-JM-r3K" secondAttribute="bottom" constant="62" id="lHJ-Bf-iDZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L1U-uT-zkc" secondAttribute="bottom" constant="128" id="vQb-wV-j3H"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -49,6 +66,7 @@
                     <connections>
                         <outlet property="backView" destination="8bC-Xf-vdC" id="Ho9-pL-3Df"/>
                         <outlet property="endpointLabel" destination="L1U-uT-zkc" id="yFz-gh-rzE"/>
+                        <outlet property="endpointLabel2" destination="Kam-JM-r3K" id="Ufl-Y0-gWy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

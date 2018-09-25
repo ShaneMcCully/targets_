@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     let targets = Target()
 
     @IBOutlet weak var endpointLabel: UILabel!
+    @IBOutlet weak var endpointLabel2: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,7 @@ class ViewController: UIViewController {
         print("Config.endpoint: \(Config.endpoint) + \(buildVariable)")
         backView.backgroundColor = Target.backColour
         endpointLabel.text = Target.whichBuildIsThis
+        endpointLabel2.text = Config.endpoint
 
         #else
         let buildVariable = "DEBUG"
@@ -44,7 +46,7 @@ class ViewController: UIViewController {
         print("Config.endpoint: \(Config.endpoint) + \(buildVariable)")
         backView.backgroundColor = Target.backColour
         endpointLabel.text = Target.whichBuildIsThis
-
+        endpointLabel2.text = Config.endpoint
         #endif
 
     }
