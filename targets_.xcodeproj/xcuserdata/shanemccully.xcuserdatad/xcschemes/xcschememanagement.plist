@@ -4,10 +4,40 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>targets_.xcscheme</key>
+		<key>targets_Debug.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>targets_Production.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>E947523D215A2AF7009885FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E9475251215A2AF9009885FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E947525C215A2AF9009885FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E947526F215A2B5E009885FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
