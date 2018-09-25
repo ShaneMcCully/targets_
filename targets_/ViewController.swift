@@ -35,14 +35,16 @@ class ViewController: UIViewController {
         let buildVariable = "PRODUCTION"
         print("targets_Production")
         print("Config.endpoint: \(Config.endpoint) + \(buildVariable)")
-        endpointLabel.text = Target.whichBuildIsThis
         backView.backgroundColor = Target.backColour
+        endpointLabel.text = Target.whichBuildIsThis
+
         #else
         let buildVariable = "DEBUG"
         print("targets_Debug")
         print("Config.endpoint: \(Config.endpoint) + \(buildVariable)")
-        endpointLabel.text = Target.whichBuildIsThis
         backView.backgroundColor = Target.backColour
+        endpointLabel.text = Target.whichBuildIsThis
+
         #endif
 
     }
